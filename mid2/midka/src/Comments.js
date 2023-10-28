@@ -25,9 +25,9 @@ export function Comments() {
         <>
             <p>Filter Comments</p>
             <input value={val} onChange={e=>changeVal(e.target.value)} />
-            <button onClick={() => {list.push({id: id+1, name:val, like: false}); console.log(list); id+=1}}></button>
-            <button onClick={() => {console.log(commentId)}}></button>
-            <button onClick={() => {console.log(filtered)}}></button>
+            <button class="button" onClick={() => {list.push({id: id+1, name:val, like: false}); console.log(list); id+=1}}></button>
+            <button class="button" onClick={() => {console.log(commentId)}}></button>
+            <button class="button" onClick={() => {console.log(filtered)}}></button>
             <p>Comments:</p>
             <ul>
                 {

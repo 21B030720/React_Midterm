@@ -40,8 +40,8 @@ export function C2() {
         <>
         <p>param: {id}</p>
             <input value={val} onChange={e=>changeVal(e.target.value)} />
-            <button onClick={() => {deleteElement(id); }}>Delete</button>
-            <button onClick={() => {changeElement(id); console.log(list)}}>Change</button>
+            <button class="button" onClick={() => {deleteElement(id); }}>Delete</button>
+            <button class="button" onClick={() => {changeElement(id); console.log(list)}}>Change</button>
 
             <ul>
                 {

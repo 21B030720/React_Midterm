@@ -2,3 +2,10 @@
   width: 200px;
   height: 20px;
 }
+
+.back {
+  background-color: beige;
+}
+.button {
+  background-color: blue;
+}

@@ -53,14 +53,14 @@ function Home() {
 
   return (
     <>
-      <input value={val} onChange={e=>setVal(e.target.value)} />
-      <button onClick={() => { setList(List => [...List, {id: id, name: val, like: false, comments: ["well"]}] ); setId(id + 1)}}>Add</button>
-      <button onClick={() => {filter(val)}}>save only</button>
+      <input class="input" value={val} onChange={e=>setVal(e.target.value)} />
+      <button class="button" onClick={() => { setList(List => [...List, {id: id, name: val, like: false, comments: ["well"]}] ); setId(id + 1)}}>Add</button>
+      <button class="button" onClick={() => {filter(val)}}>save only</button>
       <ul>
       {
         list.map((part) => {
           return (
-            <li id={part['id']}>
+            <li class ="back" id={part['id']}>
               <Link to={`/post/${part['id']}`}> {part['id']} {part['name']} {part['like'] ? "liked" : "simple"} </Link> <button onClick={()=> like(part['id'])} />
             </li>
           )
